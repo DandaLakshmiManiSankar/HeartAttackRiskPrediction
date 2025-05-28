@@ -69,6 +69,6 @@ if st.button('Predict'):
         prediction = np.where(prediction >= 0.5, 1, 0)
 
         if prediction == 0:
-            st.success("✅ Patient has no risk of Heart Attack")
-        else:
             st.error("⚠️ Patient has risk of Heart Attack")
+        else:
+            st.success("✅ Patient has no risk of Heart Attack")
